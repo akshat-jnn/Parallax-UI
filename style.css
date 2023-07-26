@@ -1,0 +1,87 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+#wrap {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 10px;
+}
+.cont {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-style: preserve-3d;
+  height: 100%;
+  z-index: -1;
+}
+.back,
+.fore {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  object-fit: cover;
+}
+
+.back {
+  transform: translateZ(-40px) scale(5);
+}
+.fore {
+  transform: translateZ(-20px) scale(3);
+}
+h1 {
+  position: absolute;
+  top: 6rem;
+  letter-spacing: 40px;
+  font-size: 10rem;
+  transform: translateX(30px);
+  /* font-family: "Roboto Mono", monospace; */
+  font-family: "Shadows Into Light", cursive;
+  color: white;
+  text-shadow: 5px 5px 10px rgba(1, 0, 0, 0.4);
+}
+section {
+  background-color: rgba(45, 45, 45);
+  color: white;
+  padding: 1.5rem 0;
+  font-family: "Poppins", sans-serif;
+}
+.para {
+  font-size: 1.5rem;
+  padding: 0 10rem;
+  margin: 2.5rem 0;
+}
+.head {
+  font-size: 5rem;
+  padding: 0 10rem;
+}
+.head2 {
+  position: absolute;
+  top: 200px;
+  left: 650px;
+  font-size: 3rem;
+  background-color: white;
+  color: black;
+  padding: 0 1rem;
+}
+.bg {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  background-attachment: fixed;
+  height: 500px;
+}
+.bg1 {
+  background-image: url(/parallax/s1.jpg);
+}
+.bg2 {
+  background-image: url(/parallax/s11.jpg);
+}
+.bg3 {
+  background-image: url(/parallax/s3.jpg);
+}
